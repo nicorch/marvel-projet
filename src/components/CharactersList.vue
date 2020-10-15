@@ -8,21 +8,6 @@
   <section v-else>
     <div v-if="loading">Loading...</div>
     <div v-else>
-    <table class="table-auto">
-      <thead>
-        <tr>
-          <th class="px-4 py-2">Nom</th>
-          <th class="px-4 py-2">Description</th>
-          <th class="px-4 py-2">Image</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="character in info.data.results" :key="character.id">
-          <td class="border px-4 py-2">{{ character.name }}</td>
-          <td class="border px-4 py-2">{{ character.description }}</td>
-        </tr>
-      </tbody> 
-    </table>
   </div>
   </section>
 </div>
