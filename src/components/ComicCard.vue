@@ -1,13 +1,13 @@
 <template>
-  <div class="comic-item-card">
-      <a :href="url_item">
+  <div class="comic-item-card col">
+      <router-link :to="url_item">
         <div class="card text-left">
             <img class="card-img-top"  :src="getImgPath(comic)" alt="">
             <div class="card-body">
             <h4 class="card-title">{{ comic.title }}</h4>
             </div>
         </div>
-      </a>
+      </router-link>
   </div>
 </template>
 
@@ -17,11 +17,10 @@ import axios from 'axios'
 export default {
     name: 'ComicCard',
     props: {
-        
+        id: null,
     },
     data() {
         return {
-            id: '2',
             comic: null,
             url_item: null,
         }
