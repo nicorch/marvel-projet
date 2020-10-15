@@ -1,5 +1,9 @@
 <template>
-    <h2>Home</h2>
+  <div>
+      <img alt="Vue logo" src="../assets/mavel_wall.png" width=100%>
+      <h2>Home</h2>
+      <p>ok</p>
+  </div>
 </template>
 
 <script>
